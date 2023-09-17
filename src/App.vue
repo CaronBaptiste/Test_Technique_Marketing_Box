@@ -1,28 +1,53 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="parentBody" id="app">
+     <div class="divBody">
+      <PreHeader></PreHeader>
+      <HeaderList></HeaderList>
+      <HomeHeader></HomeHeader>
+      <LogoSlidder></LogoSlidder>
+      <ProductGrid></ProductGrid>
+      <ServiceGrid></ServiceGrid>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PreHeader from "./components/PreHeader.vue";
+import HeaderList from "./components/HeaderList.vue";
+import HomeHeader from "./components/HomeHeader.vue";
+import LogoSlidder from "./components/LogoSlidder.vue";
+import ProductGrid from "./components/ProductGrid.vue";
+import ServiceGrid from "./components/ServiceGrid.vue";
 
 export default {
-  name: 'App',
+  name: "App",
+
   components: {
-    HelloWorld
-  }
-}
+    PreHeader,
+    HeaderList,
+    HomeHeader,
+    LogoSlidder,
+    ProductGrid,
+    ServiceGrid,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body
+{
+  margin: 0;
+  padding: 0;
+}
+.parentBody {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.divBody {
+  grid-area: 1 / 2 / 2 / 3;
 }
 </style>
