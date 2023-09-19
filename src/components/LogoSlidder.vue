@@ -1,8 +1,8 @@
 <template>
-  <section class="center marginLeft marginRight paddingLR" style="margin-bottom: 4em;">
-    <div class="">
-      <p class="center" style="margin-bottom: 2.5em">reconnu par</p>
-      <div class="parent">
+  <section class="center" style="margin-bottom: 4em;">
+    <div>
+      <p class="center txtApprouved" style="margin-bottom: 2.5em">APPROUVÉ PAR PLUS DE 17 000 ENTREPRISES</p>
+      <div class="parentLogoSlidder">
         <div class="div1 mb3">
           <div>
             <img
@@ -101,7 +101,7 @@ export default {
   padding-right: 1em;
 }
 
-.parent {
+.parentLogoSlidder {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 1fr;
@@ -135,5 +135,14 @@ export default {
   margin-bottom: 1.5em;
   padding-left: 1.5em;
   padding-right: 1.5em;
+}
+.txtApprouved{
+  font-size: 16px; 
+  font-weight: bold; 
+  font-weight: 600;
+  color:   rgba(21, 26, 40, 0.5);
+  text-align: center; 
+  letter-spacing: 1px;
+  box-sizing: border-box;
 }
 </style>

@@ -1,6 +1,19 @@
 <template>
-    <div class="padding center parent marginLeft marginRight" style="width: 76.5em;">
-        <div class="div1 center " style="background-color: aqua;"> tél</div>
+    <div class="padding center parent " >
+        <div class="div1 wrapper" > 
+            <h1 class="HomeHeaderTitle">La téléphonie d'entreprise connectée à vos outils</h1>
+            <p class="pStyle" >Facile à installer. Simple à utiliser. Intégrée à vos outils.</p>
+            <div class="boxInput">
+                <div style="padding: 10px;">
+                    <input type="email" placeholder="Email professionel">
+                </div>
+                <div>
+                    <button class="btnStyle_txt">
+                        Essai gratuit
+                    </button>
+                </div>
+            </div>
+        </div>
         <div class="div2">
             <img src="https://a.storyblok.com/f/157376/1328x1568/f7dcb5e4a0/hero-fr.jpg/m/" alt="" class="imgStyle">
         </div>
@@ -14,9 +27,33 @@ export default {
 </script>
 
 <style scoped>
+input::placeholder{
+    color: #d1d8db;
+}
+.boxInput{
+    padding: 8px;
+    height: 60px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    border: 1px solid rgba(2,40,45,.2);
+    box-shadow: 0 24px 48px rgba(2,40,45,.05);
+}
+
+.wrapper{
+    flex-wrap: wrap;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+}
+
 .center {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .padding {
@@ -27,12 +64,10 @@ export default {
 }
 
 .imgStyle {
-    height: 31.25em;
-    width: 31.25em;
-    border-top-right-radius: 5%;
-    border-top-left-radius: 5%;
-    border-bottom-right-radius: 5%;
-    border-bottom-left-radius: 5%;
+    object-fit: cover;
+    height: 500PX;
+    min-width: 500px;
+    border-radius: 5% 5% 5% 5%;
 }
 
 .parent {
@@ -48,5 +83,34 @@ export default {
 }
 
 .div2 {
-    grid-area: 1 / 2 / 2 / 3;
-}</style>
+    display: flex;
+    justify-content: flex-end;
+}
+
+.HomeHeaderTitle{
+    font-size: 54px;
+    line-height: 64px;
+    color:rgb(1, 38, 53) ;
+}
+
+.pStyle{
+    color: rgb(1, 38, 53);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    box-sizing: border-box;
+}
+.btnStyle_txt:hover{
+  transition: 0.5s;
+  background-color: #00724e;
+}
+.btnStyle_txt{
+  border-radius: 30px;
+  padding: 10px 24px;
+  color: #FFF;
+  background-color: #00bd82;
+  font-weight: 500;
+}
+
+</style>
