@@ -1,5 +1,5 @@
 <template>
-  <nav class="parentNav navStyle">
+  <nav class="navStyle">
     <section class="">
       <div class="parentNavbar">
         <div class="divLogo"> 
@@ -92,9 +92,8 @@ export default {
 
 .divLogo { grid-area: 1 / 2 / 2 / 3; 
   display: flex;
-  justify-content: start;
+  justify-content: space-around;
   align-items: center;
-  justify-items: start;
 }
 .divDropdown { grid-area: 1 / 3 / 2 / 4;
   display: flex;

@@ -200,46 +200,32 @@ export default {
 }
 .spanStyle {
   color: rgba(1, 38, 53);
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
   font-size: 18px;
   font-weight: 600;
   line-height: 26px;
   height: auto;
   text-align: center;
-  text-decoration-color: rgba(1, 38, 53);
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  text-decoration-line: none;
-  transition-delay: 0s;
-  transition-duration: 0.375s;
-  transition-property: color;
-  transition-timing-function: ease;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyLjgzIDEyLjAwNmwtMy44MTUtMy44OUwxMC4xMDEgNyAxNSAxMi4wMDIgMTAuMDk0IDE3IDkgMTUuODg0bDMuODMtMy44Nzh6IiBmaWxsPSIjMDBCRDgyIi8+PC9zdmc+Cg==);
-  background-position: 75%;
+  background-position: right center;
+  background-repeat: no-repeat;
   background-size: var(--icon-width);
-  transition: transform 525ms;
+  transition: color 0.3s;
 }
 
-.spanStyle::after {
-    content: ''; 
-    display: inline-block;
-    width: 20px; 
-    height: 20px; 
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyLjgzIDEyLjAwNmwtMy44MTUtMy44OUwxMC4xMDEgNyAxNSAxMi4wMDIgMTAuMDk0IDE3IDkgMTUuODg0bDMuODMtMy44Nzh6IiBmaWxsPSIjMDBCRDgyIi8+PC9zdmc+Cg==); /* Ajoutez le chemin de votre icône */
-    background-size: 100%; 
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 50%;
-    left: calc(100% + 5px); 
-    transform: translateY(-50%); 
-    transition: transform 525ms;
-    background-position: 100%; 
-}
+/* .spanStyle::after {
+  margin-right: 0;
+  margin-left: 5px;
+  margin-right: -10px;
+  transition: margin-right 0.3s;
+} */
 
-.spanStyle:hover::after {
-    transform: translateX(5px); 
+/* .spanStyle:hover::after{
+  margin-right: 0 ;
+} */
+
+.spanStyle:hover{
+  color: #00a859;
+  padding-right: 10px;
 }
 
 .h2Style {

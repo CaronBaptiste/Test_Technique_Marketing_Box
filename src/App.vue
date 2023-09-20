@@ -6,10 +6,15 @@
     </div>
     <div class="parentBody">
       <div class="divBody">
-      <HomeHeader></HomeHeader>
-      <LogoSlidder></LogoSlidder>
-      <ProductGrid></ProductGrid>
-      <ServiceGrid></ServiceGrid>
+          <HomeHeader></HomeHeader>
+          <LogoSlidder></LogoSlidder>
+          <ProductGrid></ProductGrid>
+          <ServiceGrid></ServiceGrid>
+          <CardConnect></CardConnect>
+          <CardWork></CardWork>
+          <LogoPartner></LogoPartner>
+          <CardDemoBlue></CardDemoBlue>
+          <FooterGrid></FooterGrid>
       </div>
     </div>
   </div>
@@ -23,7 +28,11 @@ import HomeHeader from "./components/HomeHeader.vue";
 import LogoSlidder from "./components/LogoSlidder.vue";
 import ProductGrid from "./components/ProductGrid.vue";
 import ServiceGrid from "./components/ServiceGrid.vue";
-
+import CardConnect from "./components/CardConnect.vue";
+import CardWork from "./components/CardWork.vue";
+import LogoPartner from "./components/LogoPartner.vue";
+import CardDemoBlue from "./components/CardDemoBlue.vue";
+import FooterGrid from "./components/FooterGrid.vue";
 export default {
   name: "App",
 
@@ -34,16 +43,22 @@ export default {
     LogoSlidder,
     ProductGrid,
     ServiceGrid,
+    CardConnect,
+    CardWork,
+    LogoPartner,
+    CardDemoBlue,
+    FooterGrid
   },
 };
 </script>
 
-<style>
+<style  >
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 .navFixed{
   position: fixed;
   z-index: 10;
+  min-width: 100%;
 }
 
 body {
@@ -61,8 +76,9 @@ body {
 }
 
 .divBody {
-  grid-area: 1 / 2 / 2 / 3;
+  max-width: 1224px;
   margin-top: 22vh;
+  grid-area: 1 / 2 / 2 / 3;
 }
 
 </style>

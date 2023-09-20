@@ -45,7 +45,6 @@ input::placeholder{
 
 .wrapper{
     flex-wrap: wrap;
-    display: block;
     font-size: 18px;
     font-weight: 400;
 }
@@ -80,9 +79,11 @@ input::placeholder{
 
 .div1 {
     grid-area: 1 / 1 / 2 / 2;
+    min-width: 650px;
 }
 
 .div2 {
+    grid-area: 1 / 2 / 2 / 3;
     display: flex;
     justify-content: flex-end;
 }
@@ -91,11 +92,12 @@ input::placeholder{
     font-size: 54px;
     line-height: 64px;
     color:rgb(1, 38, 53) ;
+    width: 100%;
 }
 
 .pStyle{
     color: rgb(1, 38, 53);
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
     font-weight: 400;
     margin-bottom: 32px;
