@@ -12,10 +12,12 @@
           <ServiceGrid></ServiceGrid>
           <CardConnect></CardConnect>
           <CardWork></CardWork>
-          <LogoPartner></LogoPartner>
-          <CardDemoBlue></CardDemoBlue>
-          <FooterGrid></FooterGrid>
+        </div>
       </div>
+      <div>
+        <LogoPartner></LogoPartner>
+        <CardDemoBlue></CardDemoBlue>
+        <FooterGrid></FooterGrid>
     </div>
   </div>
 </template>
