@@ -2,7 +2,7 @@
   <section style="background-color: #06374b; margin: 60px 0px">
     <div class="parent_logo_partner">
       <div class="div_content">
-        <h1>La téléphonie d'entreprise connectée à vos outils</h1>
+        <h1 >La téléphonie d'entreprise connectée à vos <br> outils</h1>
         <div class="logo_large_parent">
           <div class="logo_large_flex_grid1">
             <img
@@ -189,7 +189,6 @@ export default {
   grid-row-gap: 0px;
   margin: 20px 0;
 }
-
 .img_large {
   height: 48px;
   width: 48px;

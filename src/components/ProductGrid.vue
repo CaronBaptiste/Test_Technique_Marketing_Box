@@ -39,8 +39,12 @@
                 rapidement pour appeler partout dans le monde.
               </p>
             </div>
-            <a href="" style="text-decoration-line:none ;">
-            <span class="center spanStyle"> Toute nos fonctionnalités </span></a>
+            <div class="center spanStyle">
+              <a href="" style="text-decoration-line:none ; color: black; display: flex; flex-direction: row;">
+                <span class=""> Toute nos fonctionnalités </span>
+                <img src="./../assets/arrow.svg" alt="" style="height: 30px;">
+              </a>
+            </div>
           </div>
           <!-- Video2 -->
           <div
@@ -68,7 +72,12 @@
                 applications.
               </p>
             </div>
-            <span class="center spanStyle"> Voir notre marketplace </span>
+            <div class="center spanStyle">
+              <a href="" style="text-decoration-line:none ; color: black; display: flex; flex-direction: row;">
+                <span class=""> Voir notre market place </span>
+                <img src="./../assets/arrow.svg" alt="" style="height: 30px;">
+              </a>
+            </div>
           </div>
 
           <!-- Video3 -->
@@ -93,7 +102,12 @@
                 bonnes décisions au bon moment.
               </p>
             </div>
-            <span class="center spanStyle"> Gardez un oeil sur vos KPI </span>
+            <div class="center spanStyle">
+              <a href="" style="text-decoration-line:none ; display: flex; flex-direction: row; color: black;">
+                <span class=""> Garder un oeil sur vos KPI </span>
+                <img src="./../assets/arrow.svg" alt="" style="height: 30px;">
+              </a>
+            </div>
           </div>
           <!-- Video4 -->
           <div
@@ -122,7 +136,12 @@
                 compétences quand vous en avez besoin.
               </p>
             </div>
-            <span class="center spanStyle"> Découvrez nos cas clients</span>
+            <div class="center spanStyle">
+              <a href="" style="text-decoration-line:none ; display: flex; flex-direction: row; color: black;">
+                <span class=""> Découvrez nos cas clients </span>
+                <img src="./../assets/arrow.svg" alt="" style="height: 30px;">
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -205,13 +224,7 @@ export default {
   line-height: 26px;
   height: auto;
   text-align: center;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyLjgzIDEyLjAwNmwtMy44MTUtMy44OUwxMC4xMDEgNyAxNSAxMi4wMDIgMTAuMDk0IDE3IDkgMTUuODg0bDMuODMtMy44Nzh6IiBmaWxsPSIjMDBCRDgyIi8+PC9zdmc+Cg==);
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: var(--icon-width);
-  transition: color 0.3s;
 }
-
 /* .spanStyle::after {
   margin-right: 0;
   margin-left: 5px;
