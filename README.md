@@ -1,4 +1,8 @@
-# alternance-test-tech
+Ce projet avait pour but de mettre en avant mes compétences en front-end, j'ai donc décidé d'utiliser le framework VueJs.
+
+Je n'ai réalisé que la version desktop.
+
+Voici comment démarrer la version dekstop
 
 ## Project setup
 ```
